@@ -16,14 +16,14 @@ limitations under the License.
 
 import { logger } from "matrix-js-sdk/src/logger";
 import { MatrixEvent, Room } from "matrix-js-sdk/src/matrix";
-import { UpdateCheckStatus } from "matrix-react-sdk/src/BasePlatform";
-import { Action } from "matrix-react-sdk/src/dispatcher/actions";
-import dispatcher from "matrix-react-sdk/src/dispatcher/dispatcher";
-import * as rageshake from "matrix-react-sdk/src/rageshake/rageshake";
+import { UpdateCheckStatus } from "@dom-digital-online-media/matrix-react-sdk/src/BasePlatform";
+import { Action } from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/actions";
+import dispatcher from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/dispatcher";
+import * as rageshake from "@dom-digital-online-media/matrix-react-sdk/src/rageshake/rageshake";
 
 import ElectronPlatform from "../../../../src/vector/platform/ElectronPlatform";
 
-jest.mock("matrix-react-sdk/src/rageshake/rageshake", () => ({
+jest.mock("@dom-digital-online-media/matrix-react-sdk/src/rageshake/rageshake", () => ({
     flush: jest.fn(),
 }));
 

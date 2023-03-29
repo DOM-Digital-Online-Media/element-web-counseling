@@ -1,4 +1,4 @@
 module.exports = {
-    ...require("matrix-react-sdk/.stylelintrc.js"),
+    ...require("@dom-digital-online-media/matrix-react-sdk/.stylelintrc.js"),
     extends: ["stylelint-config-standard", "stylelint-config-prettier"],
 };

@@ -10,7 +10,7 @@
 # Element
 
 Element (formerly known as Vector and Riot) is a Matrix web client built using the [Matrix
-React SDK](https://github.com/matrix-org/matrix-react-sdk).
+React SDK](https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk).
 
 # Supported Environments
 
@@ -204,7 +204,7 @@ element-web branch and then run:
 ```bash
 docker build -t \
     --build-arg USE_CUSTOM_SDKS=true \
-    --build-arg REACT_SDK_REPO="https://github.com/matrix-org/matrix-react-sdk.git" \
+    --build-arg REACT_SDK_REPO="https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk.git" \
     --build-arg REACT_SDK_BRANCH="develop" \
     --build-arg JS_SDK_REPO="https://github.com/matrix-org/matrix-js-sdk.git" \
     --build-arg JS_SDK_BRANCH="develop" \
@@ -246,7 +246,7 @@ Dockerfile.
 # Development
 
 Before attempting to develop on Element you **must** read the [developer guide
-for `matrix-react-sdk`](https://github.com/matrix-org/matrix-react-sdk#developer-guide), which
+for `@dom-digital-online-media/matrix-react-sdk`](https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk#developer-guide), which
 also defines the design, architecture and style for Element too.
 
 Read the [Choosing an issue](docs/choosing-an-issue.md) page for some guidance
@@ -260,7 +260,7 @@ You should also familiarise yourself with the ["Here be Dragons" guide
 to the tame & not-so-tame dragons (gotchas) which exist in the codebase.
 
 The idea of Element is to be a relatively lightweight "skin" of customisations on
-top of the underlying `matrix-react-sdk`. `matrix-react-sdk` provides both the
+top of the underlying `@dom-digital-online-media/matrix-react-sdk`. `@dom-digital-online-media/matrix-react-sdk` provides both the
 higher and lower level React components useful for building Matrix communication
 apps using React.
 
@@ -275,7 +275,7 @@ of the repository. See `.env.example` for documentation and an example.
 
 # Setting up a dev environment
 
-Much of the functionality in Element is actually in the `matrix-react-sdk` and
+Much of the functionality in Element is actually in the `@dom-digital-online-media/matrix-react-sdk` and
 `matrix-js-sdk` modules. It is possible to set these up in a way that makes it
 easy to track the `develop` branches in git and to make local changes without
 having to manually rebuild each time.
@@ -290,11 +290,11 @@ yarn install
 popd
 ```
 
-Then similarly with `matrix-react-sdk`:
+Then similarly with `@dom-digital-online-media/matrix-react-sdk`:
 
 ```bash
-git clone https://github.com/matrix-org/matrix-react-sdk.git
-pushd matrix-react-sdk
+git clone https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk.git
+pushd @dom-digital-online-media/matrix-react-sdk
 yarn link
 yarn link matrix-js-sdk
 yarn install
@@ -315,7 +315,7 @@ Finally, build and start Element itself:
 
 ```bash
 yarn link matrix-js-sdk
-yarn link matrix-react-sdk
+yarn link @dom-digital-online-media/matrix-react-sdk
 yarn install
 yarn start
 ```
@@ -361,7 +361,7 @@ sudo sysctl -p
 
 ---
 
-When you make changes to `matrix-react-sdk` or `matrix-js-sdk` they should be
+When you make changes to `@dom-digital-online-media/matrix-react-sdk` or `matrix-js-sdk` they should be
 automatically picked up by webpack and built.
 
 If any of these steps error with, `file table overflow`, you are probably on a mac
@@ -379,7 +379,7 @@ yarn test
 
 ### End-to-End tests
 
-See [matrix-react-sdk](https://github.com/matrix-org/matrix-react-sdk/#end-to-end-tests) for how to run the end-to-end tests.
+See [@dom-digital-online-media/matrix-react-sdk](https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk/#end-to-end-tests) for how to run the end-to-end tests.
 
 # Translations
 

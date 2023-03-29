@@ -59,12 +59,12 @@ module.exports = {
                                 message: "Please use matrix-js-sdk/src/matrix instead",
                             },
                             {
-                                name: "matrix-react-sdk",
-                                message: "Please use matrix-react-sdk/src/index instead",
+                                name: "@dom-digital-online-media/matrix-react-sdk",
+                                message: "Please use @dom-digital-online-media/matrix-react-sdk/src/index instead",
                             },
                             {
-                                name: "matrix-react-sdk/",
-                                message: "Please use matrix-react-sdk/src/index instead",
+                                name: "@dom-digital-online-media/matrix-react-sdk/",
+                                message: "Please use @dom-digital-online-media/matrix-react-sdk/src/index instead",
                             },
                         ],
                         patterns: [
@@ -73,8 +73,8 @@ module.exports = {
                                 message: "Please use matrix-js-sdk/src/* instead",
                             },
                             {
-                                group: ["matrix-react-sdk/lib", "matrix-react-sdk/lib/", "matrix-react-sdk/lib/**"],
-                                message: "Please use matrix-react-sdk/src/* instead",
+                                group: ["@dom-digital-online-media/matrix-react-sdk/lib", "@dom-digital-online-media/matrix-react-sdk/lib/", "@dom-digital-online-media/matrix-react-sdk/lib/**"],
+                                message: "Please use @dom-digital-online-media/matrix-react-sdk/src/* instead",
                             },
                         ],
                     },

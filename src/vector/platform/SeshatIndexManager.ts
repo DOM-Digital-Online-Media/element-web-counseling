@@ -19,7 +19,7 @@ import BaseEventIndexManager, {
     IEventAndProfile,
     IIndexStats,
     ISearchArgs,
-} from "matrix-react-sdk/src/indexing/BaseEventIndexManager";
+} from "@dom-digital-online-media/matrix-react-sdk/src/indexing/BaseEventIndexManager";
 import { IMatrixProfile, IEventWithRoomId as IMatrixEvent, IResultRoomEvents } from "matrix-js-sdk/src/@types/search";
 
 import { IPCManager } from "./IPCManager";

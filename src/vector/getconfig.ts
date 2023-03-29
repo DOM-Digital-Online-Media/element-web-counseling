@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import type { IConfigOptions } from "matrix-react-sdk/src/IConfigOptions";
+import type { IConfigOptions } from "@dom-digital-online-media/matrix-react-sdk/src/IConfigOptions";
 
 // Load the config file. First try to load up a domain-specific config of the
 // form "config.$domain.json" and if that fails, fall back to config.json.

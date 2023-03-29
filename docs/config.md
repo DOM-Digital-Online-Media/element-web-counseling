@@ -100,7 +100,7 @@ instance. As of writing those settings are not fully documented, however a few a
     }
     ```
     These values will take priority over the hardcoded defaults for the settings. For a list of available settings, see
-    [Settings.tsx](https://github.com/matrix-org/matrix-react-sdk/blob/develop/src/settings/Settings.tsx).
+    [Settings.tsx](https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk/blob/develop/src/settings/Settings.tsx).
 
 ## Customisation & branding
 
@@ -130,7 +130,7 @@ complete re-branding/private labeling, a more personalised experience can be ach
    configuration found in the well-known location is used instead.
 10. `welcome_user_id`: An optional user ID to start a DM with after creating an account. Defaults to nothing (no DM created).
 11. `custom_translations_url`: An optional URL to allow overriding of translatable strings. The JSON file must be in a format of
-    `{"affected string": {"languageCode": "new string"}}`. See https://github.com/matrix-org/matrix-react-sdk/pull/7886 for details.
+    `{"affected string": {"languageCode": "new string"}}`. See https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk/pull/7886 for details.
 12. `branding`: Options for configuring various assets used within the app. Described in more detail down below.
 13. `embedded_pages`: Further optional URLs for various assets used within the app. Described in more detail down below.
 14. `disable_3pid_login`: When `false` (default), **enables** the options to log in with email address or phone number. Set to
@@ -516,5 +516,5 @@ The following are undocumented or intended for developer use only.
 1. `fallback_hs_url`
 2. `sync_timeline_limit`
 3. `dangerously_allow_unsafe_and_insecure_passwords`
-4. `latex_maths_delims`: An optional setting to override the default delimiters used for maths parsing. See https://github.com/matrix-org/matrix-react-sdk/pull/5939 for details. Only used when `feature_latex_maths` is enabled.
+4. `latex_maths_delims`: An optional setting to override the default delimiters used for maths parsing. See https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk/pull/5939 for details. Only used when `feature_latex_maths` is enabled.
 5. `voice_broadcast.chunk_length`: Target chunk length in seconds for the Voice Broadcast feature currently under development.

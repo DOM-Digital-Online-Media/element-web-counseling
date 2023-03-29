@@ -15,9 +15,9 @@ limitations under the License.
 */
 
 import * as React from "react";
-import { _t } from "matrix-react-sdk/src/languageHandler";
+import { _t } from "@dom-digital-online-media/matrix-react-sdk/src/languageHandler";
 
-// directly import the style here as this layer does not support rethemedex at this time so no matrix-react-sdk
+// directly import the style here as this layer does not support rethemedex at this time so no @dom-digital-online-media/matrix-react-sdk
 // PostCSS variables will be accessible.
 import "../../../res/css/structures/ErrorView.pcss";
 

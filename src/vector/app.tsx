@@ -22,17 +22,17 @@ limitations under the License.
 import "matrix-js-sdk/src/browser-index";
 
 import React, { ReactElement } from "react";
-import PlatformPeg from "matrix-react-sdk/src/PlatformPeg";
-import { _td, newTranslatableError } from "matrix-react-sdk/src/languageHandler";
-import AutoDiscoveryUtils from "matrix-react-sdk/src/utils/AutoDiscoveryUtils";
+import PlatformPeg from "@dom-digital-online-media/matrix-react-sdk/src/PlatformPeg";
+import { _td, newTranslatableError } from "@dom-digital-online-media/matrix-react-sdk/src/languageHandler";
+import AutoDiscoveryUtils from "@dom-digital-online-media/matrix-react-sdk/src/utils/AutoDiscoveryUtils";
 import { AutoDiscovery } from "matrix-js-sdk/src/autodiscovery";
-import * as Lifecycle from "matrix-react-sdk/src/Lifecycle";
-import SdkConfig, { parseSsoRedirectOptions } from "matrix-react-sdk/src/SdkConfig";
-import { IConfigOptions } from "matrix-react-sdk/src/IConfigOptions";
+import * as Lifecycle from "@dom-digital-online-media/matrix-react-sdk/src/Lifecycle";
+import SdkConfig, { parseSsoRedirectOptions } from "@dom-digital-online-media/matrix-react-sdk/src/SdkConfig";
+import { IConfigOptions } from "@dom-digital-online-media/matrix-react-sdk/src/IConfigOptions";
 import { logger } from "matrix-js-sdk/src/logger";
 import { createClient } from "matrix-js-sdk/src/matrix";
-import { SnakedObject } from "matrix-react-sdk/src/utils/SnakedObject";
-import MatrixChat from "matrix-react-sdk/src/components/structures/MatrixChat";
+import { SnakedObject } from "@dom-digital-online-media/matrix-react-sdk/src/utils/SnakedObject";
+import MatrixChat from "@dom-digital-online-media/matrix-react-sdk/src/components/structures/MatrixChat";
 
 import { parseQs } from "./url_utils";
 import VectorBasePlatform from "./platform/VectorBasePlatform";

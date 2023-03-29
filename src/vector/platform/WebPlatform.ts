@@ -16,12 +16,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { UpdateCheckStatus, UpdateStatus } from "matrix-react-sdk/src/BasePlatform";
-import dis from "matrix-react-sdk/src/dispatcher/dispatcher";
-import { _t } from "matrix-react-sdk/src/languageHandler";
-import { hideToast as hideUpdateToast, showToast as showUpdateToast } from "matrix-react-sdk/src/toasts/UpdateToast";
-import { Action } from "matrix-react-sdk/src/dispatcher/actions";
-import { CheckUpdatesPayload } from "matrix-react-sdk/src/dispatcher/payloads/CheckUpdatesPayload";
+import { UpdateCheckStatus, UpdateStatus } from "@dom-digital-online-media/matrix-react-sdk/src/BasePlatform";
+import dis from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/dispatcher";
+import { _t } from "@dom-digital-online-media/matrix-react-sdk/src/languageHandler";
+import { hideToast as hideUpdateToast, showToast as showUpdateToast } from "@dom-digital-online-media/matrix-react-sdk/src/toasts/UpdateToast";
+import { Action } from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/actions";
+import { CheckUpdatesPayload } from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/payloads/CheckUpdatesPayload";
 import UAParser from "ua-parser-js";
 import { logger } from "matrix-js-sdk/src/logger";
 

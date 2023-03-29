@@ -32,14 +32,14 @@ if (!process.env.VERSION) {
 
 const cssThemes = {
     // CSS themes
-    "theme-legacy-light": "./node_modules/matrix-react-sdk/res/themes/legacy-light/css/legacy-light.pcss",
-    "theme-legacy-dark": "./node_modules/matrix-react-sdk/res/themes/legacy-dark/css/legacy-dark.pcss",
-    "theme-light": "./node_modules/matrix-react-sdk/res/themes/light/css/light.pcss",
+    "theme-legacy-light": "./node_modules/@dom-digital-online-media/matrix-react-sdk/res/themes/legacy-light/css/legacy-light.pcss",
+    "theme-legacy-dark": "./node_modules/@dom-digital-online-media/matrix-react-sdk/res/themes/legacy-dark/css/legacy-dark.pcss",
+    "theme-light": "./node_modules/@dom-digital-online-media/matrix-react-sdk/res/themes/light/css/light.pcss",
     "theme-light-high-contrast":
-        "./node_modules/matrix-react-sdk/res/themes/light-high-contrast/css/light-high-contrast.pcss",
-    "theme-dark": "./node_modules/matrix-react-sdk/res/themes/dark/css/dark.pcss",
-    "theme-light-custom": "./node_modules/matrix-react-sdk/res/themes/light-custom/css/light-custom.pcss",
-    "theme-dark-custom": "./node_modules/matrix-react-sdk/res/themes/dark-custom/css/dark-custom.pcss",
+        "./node_modules/@dom-digital-online-media/matrix-react-sdk/res/themes/light-high-contrast/css/light-high-contrast.pcss",
+    "theme-dark": "./node_modules/@dom-digital-online-media/matrix-react-sdk/res/themes/dark/css/dark.pcss",
+    "theme-light-custom": "./node_modules/@dom-digital-online-media/matrix-react-sdk/res/themes/light-custom/css/light-custom.pcss",
+    "theme-dark-custom": "./node_modules/@dom-digital-online-media/matrix-react-sdk/res/themes/dark-custom/css/dark-custom.pcss",
 };
 
 function getActiveThemes() {
@@ -116,7 +116,7 @@ module.exports = (env, argv) => {
     // Resolve the directories for the react-sdk and js-sdk for later use. We resolve these early, so we
     // don't have to call them over and over. We also resolve to the package.json instead of the src
     // directory, so we don't have to rely on an index.js or similar file existing.
-    const reactSdkSrcDir = path.resolve(require.resolve("matrix-react-sdk/package.json"), "..", "src");
+    const reactSdkSrcDir = path.resolve(require.resolve("@dom-digital-online-media/matrix-react-sdk/package.json"), "..", "src");
     const jsSdkSrcDir = path.resolve(require.resolve("matrix-js-sdk/package.json"), "..", "src");
 
     const ACTIVE_THEMES = getActiveThemes();
@@ -146,7 +146,7 @@ module.exports = (env, argv) => {
             bundle: "./src/vector/index.ts",
             mobileguide: "./src/vector/mobile_guide/index.ts",
             jitsi: "./src/vector/jitsi/index.ts",
-            usercontent: "./node_modules/matrix-react-sdk/src/usercontent/index.ts",
+            usercontent: "./node_modules/@dom-digital-online-media/matrix-react-sdk/src/usercontent/index.ts",
             ...(useHMR ? {} : cssThemes),
         },
 
@@ -206,7 +206,7 @@ module.exports = (env, argv) => {
 
                 // Same goes for js/react-sdk - we don't need two copies.
                 "matrix-js-sdk": path.resolve(__dirname, "node_modules/matrix-js-sdk"),
-                "matrix-react-sdk": path.resolve(__dirname, "node_modules/matrix-react-sdk"),
+                "@dom-digital-online-media/matrix-react-sdk": path.resolve(__dirname, "node_modules/@dom-digital-online-media/matrix-react-sdk"),
                 // and sanitize-html
                 "sanitize-html": path.resolve(__dirname, "node_modules/sanitize-html"),
 
@@ -332,7 +332,7 @@ module.exports = (env, argv) => {
                             ? {
                                   loader: "style-loader",
                                   /**
-                                   * If we refactor the `theme.js` in `matrix-react-sdk` a little bit,
+                                   * If we refactor the `theme.js` in `@dom-digital-online-media/matrix-react-sdk` a little bit,
                                    * we could try using `lazyStyleTag` here to add and remove styles on demand,
                                    * that would nicely resolve issues of race conditions for themes,
                                    * at least for development purposes.
@@ -646,7 +646,7 @@ module.exports = (env, argv) => {
 
             // This is the usercontent sandbox's entry point (separate for iframing)
             new HtmlWebpackPlugin({
-                template: "./node_modules/matrix-react-sdk/src/usercontent/index.html",
+                template: "./node_modules/@dom-digital-online-media/matrix-react-sdk/src/usercontent/index.html",
                 filename: "usercontent/index.html",
                 minify: false,
                 chunks: ["usercontent"],

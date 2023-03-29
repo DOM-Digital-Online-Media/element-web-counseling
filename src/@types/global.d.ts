@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import "matrix-react-sdk/src/@types/global"; // load matrix-react-sdk's type extensions first
+import "@dom-digital-online-media/matrix-react-sdk/src/@types/global"; // load @dom-digital-online-media/matrix-react-sdk's type extensions first
 import type { Renderer } from "react-dom";
 import type { logger } from "matrix-js-sdk/src/logger";
 

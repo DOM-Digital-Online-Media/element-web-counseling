@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Fetches the js-sdk and matrix-react-sdk dependencies for development
+# Fetches the js-sdk and @dom-digital-online-media/matrix-react-sdk dependencies for development
 # or testing purposes
 # If there exists a branch of that dependency with the same name as
 # the branch the current checkout is on, use that branch. Otherwise,
@@ -84,16 +84,16 @@ yarn link matrix-js-sdk
 
 ##############################
 
-echo 'Setting up matrix-react-sdk'
+echo 'Setting up @dom-digital-online-media/matrix-react-sdk'
 
-dodep matrix-org matrix-react-sdk
+dodep matrix-org @dom-digital-online-media/matrix-react-sdk
 
-pushd matrix-react-sdk
+pushd @dom-digital-online-media/matrix-react-sdk
 yarn link
 yarn link matrix-js-sdk
 yarn install --pure-lockfile
 popd
 
-yarn link matrix-react-sdk
+yarn link @dom-digital-online-media/matrix-react-sdk
 
 ##############################

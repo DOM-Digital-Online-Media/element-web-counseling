@@ -18,7 +18,7 @@ limitations under the License.
 // MatrixChat.showScreen(screen, params)
 import { logger } from "matrix-js-sdk/src/logger";
 import { QueryDict } from "matrix-js-sdk/src/utils";
-import MatrixChatType from "matrix-react-sdk/src/components/structures/MatrixChat";
+import MatrixChatType from "@dom-digital-online-media/matrix-react-sdk/src/components/structures/MatrixChat";
 
 import { parseQsFromFragment } from "./url_utils";
 

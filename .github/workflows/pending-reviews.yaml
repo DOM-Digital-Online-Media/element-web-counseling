@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         environment: Matrix
         env:
-            URL: "https://github.com/pulls?q=is%3Apr+is%3Aopen+repo%3Amatrix-org%2Fmatrix-js-sdk+repo%3Amatrix-org%2Fmatrix-react-sdk+repo%3Avector-im%2Felement-web+repo%3Avector-im%2Felement-desktop+review-requested%3A%40me+sort%3Aupdated-desc+"
+            URL: "https://github.com/pulls?q=is%3Apr+is%3Aopen+repo%3Amatrix-org%2Fmatrix-js-sdk+repo%3Amatrix-org%2F@dom-digital-online-media/matrix-react-sdk+repo%3Avector-im%2Felement-web+repo%3Avector-im%2Felement-desktop+review-requested%3A%40me+sort%3Aupdated-desc+"
         steps:
             - uses: actions/github-script@v6
               env:
@@ -24,7 +24,7 @@ jobs:
                       const repos = [
                           "vector-im/element-desktop",
                           "vector-im/element-web",
-                          "matrix-org/matrix-react-sdk",
+                          "matrix-org/@dom-digital-online-media/matrix-react-sdk",
                           "matrix-org/matrix-js-sdk",
                       ];
                       const teams = [

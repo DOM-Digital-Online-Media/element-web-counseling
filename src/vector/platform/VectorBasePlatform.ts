@@ -17,10 +17,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import BasePlatform from "matrix-react-sdk/src/BasePlatform";
-import { _t } from "matrix-react-sdk/src/languageHandler";
+import BasePlatform from "@dom-digital-online-media/matrix-react-sdk/src/BasePlatform";
+import { _t } from "@dom-digital-online-media/matrix-react-sdk/src/languageHandler";
 
-import type { IConfigOptions } from "matrix-react-sdk/src/IConfigOptions";
+import type { IConfigOptions } from "@dom-digital-online-media/matrix-react-sdk/src/IConfigOptions";
 import { getVectorConfig } from "../getconfig";
 import Favicon from "../../favicon";
 

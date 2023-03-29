@@ -4,7 +4,7 @@ Themes are a very basic way of providing simple alternative look & feels to the
 Element app via CSS & custom imagery.
 
 They are _NOT_ co be confused with 'skins', which describe apps which sit on top
-of matrix-react-sdk - e.g. in theory Element itself is a react-sdk skin.
+of @dom-digital-online-media/matrix-react-sdk - e.g. in theory Element itself is a react-sdk skin.
 As of March 2022, skins are not fully supported; Element is the only available skin.
 
 To define a theme for Element:
@@ -17,7 +17,7 @@ To define a theme for Element:
     overridden. If every single colour is being changed (as per `_dark.pcss`)
     then you might as well keep them all.
 5.  Add the theme to the list of entrypoints in webpack.config.js
-6.  Add the theme to the list of themes in matrix-react-sdk's UserSettings.js
+6.  Add the theme to the list of themes in @dom-digital-online-media/matrix-react-sdk's UserSettings.js
 7.  Sit back and admire your handywork.
 
 In future, the assets for a theme will probably be gathered together into a

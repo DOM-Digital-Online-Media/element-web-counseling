@@ -85,7 +85,7 @@ element-web notes: Fix a bug where the 'Herd' button only worked on Tuesdays
 
 This example is for Element Web. You can specify:
 
--   matrix-react-sdk
+-   @dom-digital-online-media/matrix-react-sdk
 -   element-web
 -   element-desktop
 
@@ -119,12 +119,12 @@ checks, so please check back after a few minutes.
 
 Your PR should include tests.
 
-For new user facing features in `matrix-js-sdk`, `matrix-react-sdk` or `element-web`, you
+For new user facing features in `matrix-js-sdk`, `@dom-digital-online-media/matrix-react-sdk` or `element-web`, you
 must include:
 
 1. Comprehensive unit tests written in Jest. These are located in `/test`.
 2. "happy path" end-to-end tests.
-   These are located in `/cypress/e2e` in `matrix-react-sdk`, and
+   These are located in `/cypress/e2e` in `@dom-digital-online-media/matrix-react-sdk`, and
    are run using `element-web`. Ideally, you would also include tests for edge
    and error cases.
 
@@ -141,7 +141,7 @@ exercises the area.
 
 Changes to must be accompanied by unit tests written in Jest.
 These are located in `/spec/` in `matrix-js-sdk` or `/test/` in `element-web`
-and `matrix-react-sdk`.
+and `@dom-digital-online-media/matrix-react-sdk`.
 
 When writing unit tests, please aim for a high level of test coverage
 for new code - 80% or greater. If you cannot achieve that, please document

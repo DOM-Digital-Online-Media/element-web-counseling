@@ -20,13 +20,13 @@ limitations under the License.
 import "fake-indexeddb/auto";
 import React from "react";
 import { render, screen, fireEvent, waitFor, RenderResult, waitForElementToBeRemoved } from "@testing-library/react";
-import PlatformPeg from "matrix-react-sdk/src/PlatformPeg";
-import { MatrixClientPeg } from "matrix-react-sdk/src/MatrixClientPeg";
-import MatrixChat from "matrix-react-sdk/src/components/structures/MatrixChat";
-import dis from "matrix-react-sdk/src/dispatcher/dispatcher";
+import PlatformPeg from "@dom-digital-online-media/matrix-react-sdk/src/PlatformPeg";
+import { MatrixClientPeg } from "@dom-digital-online-media/matrix-react-sdk/src/MatrixClientPeg";
+import MatrixChat from "@dom-digital-online-media/matrix-react-sdk/src/components/structures/MatrixChat";
+import dis from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/dispatcher";
 import MockHttpBackend from "matrix-mock-request";
-import { makeType } from "matrix-react-sdk/src/utils/TypeUtils";
-import { ValidatedServerConfig } from "matrix-react-sdk/src/utils/ValidatedServerConfig";
+import { makeType } from "@dom-digital-online-media/matrix-react-sdk/src/utils/TypeUtils";
+import { ValidatedServerConfig } from "@dom-digital-online-media/matrix-react-sdk/src/utils/ValidatedServerConfig";
 import { IndexedDBCryptoStore } from "matrix-js-sdk/src/crypto/store/indexeddb-crypto-store";
 import { QueryDict, sleep } from "matrix-js-sdk/src/utils";
 

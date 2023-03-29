@@ -24,11 +24,11 @@ import {
     WidgetApi,
     WidgetApiAction,
 } from "matrix-widget-api";
-import { ElementWidgetActions } from "matrix-react-sdk/src/stores/widgets/ElementWidgetActions";
+import { ElementWidgetActions } from "@dom-digital-online-media/matrix-react-sdk/src/stores/widgets/ElementWidgetActions";
 import { logger } from "matrix-js-sdk/src/logger";
-import { IConfigOptions } from "matrix-react-sdk/src/IConfigOptions";
-import { SnakedObject } from "matrix-react-sdk/src/utils/SnakedObject";
-import { ElementWidgetCapabilities } from "matrix-react-sdk/src/stores/widgets/ElementWidgetCapabilities";
+import { IConfigOptions } from "@dom-digital-online-media/matrix-react-sdk/src/IConfigOptions";
+import { SnakedObject } from "@dom-digital-online-media/matrix-react-sdk/src/utils/SnakedObject";
+import { ElementWidgetCapabilities } from "@dom-digital-online-media/matrix-react-sdk/src/stores/widgets/ElementWidgetCapabilities";
 
 import { getVectorConfig } from "../getconfig";
 

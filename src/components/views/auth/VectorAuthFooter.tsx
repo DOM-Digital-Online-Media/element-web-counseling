@@ -16,8 +16,8 @@ limitations under the License.
 */
 
 import React, { ReactElement } from "react";
-import SdkConfig from "matrix-react-sdk/src/SdkConfig";
-import { _t } from "matrix-react-sdk/src/languageHandler";
+import SdkConfig from "@dom-digital-online-media/matrix-react-sdk/src/SdkConfig";
+import { _t } from "@dom-digital-online-media/matrix-react-sdk/src/languageHandler";
 
 const VectorAuthFooter = (): ReactElement => {
     const brandingConfig = SdkConfig.getObject("branding");

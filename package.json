@@ -65,13 +65,13 @@
         "@types/react": "17.0.53"
     },
     "dependencies": {
+        "@dom-digital-online-media/@dom-digital-online-media/matrix-react-sdk": "^3.68.2",
         "@matrix-org/olm": "https://gitlab.matrix.org/api/v4/projects/27/packages/npm/@matrix-org/olm/-/@matrix-org/olm-3.2.12.tgz",
         "@matrix-org/react-sdk-module-api": "^0.0.4",
         "gfm.css": "^1.1.2",
         "jsrsasign": "^10.5.25",
         "katex": "^0.16.0",
         "matrix-js-sdk": "23.5.0",
-        "matrix-react-sdk": "3.68.0",
         "matrix-widget-api": "^1.1.1",
         "react": "17.0.2",
         "react-dom": "17.0.2",
@@ -192,29 +192,29 @@
             "jest-canvas-mock"
         ],
         "setupFilesAfterEnv": [
-            "<rootDir>/node_modules/matrix-react-sdk/test/setupTests.js"
+            "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/test/setupTests.js"
         ],
         "moduleNameMapper": {
             "\\.(css|scss|pcss)$": "<rootDir>/__mocks__/cssMock.js",
-            "\\.(gif|png|ttf|woff2)$": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/imageMock.js",
-            "\\.svg$": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/svg.js",
-            "\\$webapp/i18n/languages.json": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/languages.json",
+            "\\.(gif|png|ttf|woff2)$": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/imageMock.js",
+            "\\.svg$": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/svg.js",
+            "\\$webapp/i18n/languages.json": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/languages.json",
             "^react$": "<rootDir>/node_modules/react",
             "^react-dom$": "<rootDir>/node_modules/react-dom",
             "^matrix-js-sdk$": "<rootDir>/node_modules/matrix-js-sdk/src",
-            "^matrix-react-sdk$": "<rootDir>/node_modules/matrix-react-sdk/src",
-            "decoderWorker\\.min\\.js": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/empty.js",
-            "decoderWorker\\.min\\.wasm": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/empty.js",
-            "waveWorker\\.min\\.js": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/empty.js",
-            "context-filter-polyfill": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/empty.js",
-            "FontManager.ts": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/FontManager.js",
-            "workers/(.+)\\.worker\\.ts": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/workerMock.js",
+            "^@dom-digital-online-media/matrix-react-sdk$": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/src",
+            "decoderWorker\\.min\\.js": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/empty.js",
+            "decoderWorker\\.min\\.wasm": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/empty.js",
+            "waveWorker\\.min\\.js": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/empty.js",
+            "context-filter-polyfill": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/empty.js",
+            "FontManager.ts": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/FontManager.js",
+            "workers/(.+)\\.worker\\.ts": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/workerMock.js",
             "^!!raw-loader!.*": "jest-raw-loader",
-            "RecorderWorklet": "<rootDir>/node_modules/matrix-react-sdk/__mocks__/empty.js"
+            "RecorderWorklet": "<rootDir>/node_modules/@dom-digital-online-media/matrix-react-sdk/__mocks__/empty.js"
         },
         "transformIgnorePatterns": [
             "/node_modules/(?!matrix-js-sdk).+$",
-            "/node_modules/(?!matrix-react-sdk).+$"
+            "/node_modules/(?!@dom-digital-online-media/matrix-react-sdk).+$"
         ],
         "coverageReporters": [
             "text-summary",

@@ -18,26 +18,26 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { UpdateCheckStatus, UpdateStatus } from "matrix-react-sdk/src/BasePlatform";
-import BaseEventIndexManager from "matrix-react-sdk/src/indexing/BaseEventIndexManager";
-import dis from "matrix-react-sdk/src/dispatcher/dispatcher";
-import { _t } from "matrix-react-sdk/src/languageHandler";
-import SdkConfig from "matrix-react-sdk/src/SdkConfig";
-import { IConfigOptions } from "matrix-react-sdk/src/IConfigOptions";
-import * as rageshake from "matrix-react-sdk/src/rageshake/rageshake";
+import { UpdateCheckStatus, UpdateStatus } from "@dom-digital-online-media/matrix-react-sdk/src/BasePlatform";
+import BaseEventIndexManager from "@dom-digital-online-media/matrix-react-sdk/src/indexing/BaseEventIndexManager";
+import dis from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/dispatcher";
+import { _t } from "@dom-digital-online-media/matrix-react-sdk/src/languageHandler";
+import SdkConfig from "@dom-digital-online-media/matrix-react-sdk/src/SdkConfig";
+import { IConfigOptions } from "@dom-digital-online-media/matrix-react-sdk/src/IConfigOptions";
+import * as rageshake from "@dom-digital-online-media/matrix-react-sdk/src/rageshake/rageshake";
 import { MatrixClient } from "matrix-js-sdk/src/client";
 import { Room } from "matrix-js-sdk/src/models/room";
-import Modal from "matrix-react-sdk/src/Modal";
-import InfoDialog from "matrix-react-sdk/src/components/views/dialogs/InfoDialog";
-import Spinner from "matrix-react-sdk/src/components/views/elements/Spinner";
+import Modal from "@dom-digital-online-media/matrix-react-sdk/src/Modal";
+import InfoDialog from "@dom-digital-online-media/matrix-react-sdk/src/components/views/dialogs/InfoDialog";
+import Spinner from "@dom-digital-online-media/matrix-react-sdk/src/components/views/elements/Spinner";
 import React from "react";
 import { randomString } from "matrix-js-sdk/src/randomstring";
-import { Action } from "matrix-react-sdk/src/dispatcher/actions";
-import { ActionPayload } from "matrix-react-sdk/src/dispatcher/payloads";
-import { showToast as showUpdateToast } from "matrix-react-sdk/src/toasts/UpdateToast";
-import { CheckUpdatesPayload } from "matrix-react-sdk/src/dispatcher/payloads/CheckUpdatesPayload";
-import ToastStore from "matrix-react-sdk/src/stores/ToastStore";
-import GenericExpiringToast from "matrix-react-sdk/src/components/views/toasts/GenericExpiringToast";
+import { Action } from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/actions";
+import { ActionPayload } from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/payloads";
+import { showToast as showUpdateToast } from "@dom-digital-online-media/matrix-react-sdk/src/toasts/UpdateToast";
+import { CheckUpdatesPayload } from "@dom-digital-online-media/matrix-react-sdk/src/dispatcher/payloads/CheckUpdatesPayload";
+import ToastStore from "@dom-digital-online-media/matrix-react-sdk/src/stores/ToastStore";
+import GenericExpiringToast from "@dom-digital-online-media/matrix-react-sdk/src/components/views/toasts/GenericExpiringToast";
 import { logger } from "matrix-js-sdk/src/logger";
 import { MatrixEvent } from "matrix-js-sdk/src/models/event";
 

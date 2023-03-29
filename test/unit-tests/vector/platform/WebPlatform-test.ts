@@ -15,8 +15,8 @@ limitations under the License.
 */
 
 import fetchMock from "fetch-mock-jest";
-import { UpdateCheckStatus } from "matrix-react-sdk/src/BasePlatform";
-import { MatrixClientPeg } from "matrix-react-sdk/src/MatrixClientPeg";
+import { UpdateCheckStatus } from "@dom-digital-online-media/matrix-react-sdk/src/BasePlatform";
+import { MatrixClientPeg } from "@dom-digital-online-media/matrix-react-sdk/src/MatrixClientPeg";
 
 import WebPlatform from "../../../../src/vector/platform/WebPlatform";
 

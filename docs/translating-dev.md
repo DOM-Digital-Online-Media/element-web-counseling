@@ -3,14 +3,14 @@
 ## Requirements
 
 -   A working [Development Setup](../README.md#setting-up-a-dev-environment)
-    -   Including up-to-date versions of matrix-react-sdk and matrix-js-sdk
+    -   Including up-to-date versions of @dom-digital-online-media/matrix-react-sdk and matrix-js-sdk
 -   Latest LTS version of Node.js installed
 -   Be able to understand English
 -   Be able to understand the language you want to translate Element into
 
 ## Translating strings vs. marking strings for translation
 
-Translating strings are done with the `_t()` function found in matrix-react-sdk/lib/languageHandler.js. It is recommended to call this function wherever you introduce a string constant which should be translated. However, translating can not be performed until after the translation system has been initialized. Thus, sometimes translation must be performed at a different location in the source code than where the string is introduced. This breaks some tooling and makes it difficult to find translatable strings. Therefore, there is the alternative `_td()` function which is used to mark strings for translation, without actually performing the translation (which must still be performed separately, and after the translation system has been initialized).
+Translating strings are done with the `_t()` function found in @dom-digital-online-media/matrix-react-sdk/lib/languageHandler.js. It is recommended to call this function wherever you introduce a string constant which should be translated. However, translating can not be performed until after the translation system has been initialized. Thus, sometimes translation must be performed at a different location in the source code than where the string is introduced. This breaks some tooling and makes it difficult to find translatable strings. Therefore, there is the alternative `_td()` function which is used to mark strings for translation, without actually performing the translation (which must still be performed separately, and after the translation system has been initialized).
 
 Basically, whenever a translatable string is introduced, you should call either `_t()` immediately OR `_td()` and later `_t()`.
 
@@ -31,7 +31,7 @@ function getColorName(hex) {
 
 ## Adding new strings
 
-1.  Check if the import `import { _t } from 'matrix-react-sdk/src/languageHandler';` is present. If not add it to the other import statements. Also import `_td` if needed.
+1.  Check if the import `import { _t } from '@dom-digital-online-media/matrix-react-sdk/src/languageHandler';` is present. If not add it to the other import statements. Also import `_td` if needed.
 1.  Add `_t()` to your string. (Don't forget curly braces when you assign an expression to JSX attributes in the render method). If the string is introduced at a point before the translation system has not yet been initialized, use `_td()` instead, and call `_t()` at the appropriate time.
 1.  Run `yarn i18n` to update `src/i18n/strings/en_EN.json`
 1.  If you added a string with a plural, you can add other English plural variants to `src/i18n/strings/en_EN.json` (remeber to edit the one in the same project as the source file containing your new translation).

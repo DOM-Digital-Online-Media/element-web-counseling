@@ -26,9 +26,9 @@ limitations under the License.
  * from the rageshake.)
  */
 
-import * as rageshake from "matrix-react-sdk/src/rageshake/rageshake";
-import SdkConfig from "matrix-react-sdk/src/SdkConfig";
-import sendBugReport from "matrix-react-sdk/src/rageshake/submit-rageshake";
+import * as rageshake from "@dom-digital-online-media/matrix-react-sdk/src/rageshake/rageshake";
+import SdkConfig from "@dom-digital-online-media/matrix-react-sdk/src/SdkConfig";
+import sendBugReport from "@dom-digital-online-media/matrix-react-sdk/src/rageshake/submit-rageshake";
 import { logger } from "matrix-js-sdk/src/logger";
 
 export function initRageshake(): Promise<void> {

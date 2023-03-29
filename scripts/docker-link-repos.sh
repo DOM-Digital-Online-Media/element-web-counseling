@@ -36,4 +36,4 @@ cd ../
 
 echo "Setting up element-web with react-sdk and js-sdk packages"
 yarn link matrix-js-sdk
-yarn link matrix-react-sdk
+yarn link @dom-digital-online-media/matrix-react-sdk

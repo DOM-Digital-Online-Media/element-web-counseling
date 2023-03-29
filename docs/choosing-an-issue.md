@@ -19,7 +19,7 @@ If you're looking for inspiration on where to start, keep reading!
 
 All the issues for Element Web live in the
 [element-web](https://github.com/vector-im/element-web) repository, including
-issues that actually need fixing in `matrix-react-sdk` or one of the related
+issues that actually need fixing in `@dom-digital-online-media/matrix-react-sdk` or one of the related
 repos.
 
 The first place to look is for

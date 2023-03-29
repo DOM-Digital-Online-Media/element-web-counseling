@@ -169,7 +169,7 @@ function getTopLevelDependencyVersion(dep: string): string {
           "dependencies": {
             "@matrix-org/react-sdk-module-api": {
               "version": "0.0.1",
-              "resolved": "file:../../../matrix-react-sdk-module-api"
+              "resolved": "file:../../../@dom-digital-online-media/matrix-react-sdk-module-api"
             }
           }
         }

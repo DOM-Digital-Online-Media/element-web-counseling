@@ -66,7 +66,7 @@ jobs:
 
     i18n_lint:
         name: "i18n Check"
-        uses: matrix-org/matrix-react-sdk/.github/workflows/i18n_check.yml@develop
+        uses: matrix-org/@dom-digital-online-media/matrix-react-sdk/.github/workflows/i18n_check.yml@develop
 
     js_lint:
         name: "ESLint"
@@ -95,7 +95,7 @@ jobs:
               with:
                   cache: "yarn"
 
-            # Needs branch matching as it inherits .stylelintrc.js from matrix-react-sdk
+            # Needs branch matching as it inherits .stylelintrc.js from @dom-digital-online-media/matrix-react-sdk
             - name: Install Dependencies
               run: "./scripts/layered.sh"
 

@@ -5,7 +5,7 @@ adjacent to. As of writing, these are:
 
 -   element-desktop
 -   element-web
--   matrix-react-sdk
+-   @dom-digital-online-media/matrix-react-sdk
 -   matrix-js-sdk
 
 Other projects might extend this code style for increased strictness. For example, matrix-events-sdk

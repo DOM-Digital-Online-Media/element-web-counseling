@@ -24,10 +24,10 @@ the current directory as the build context (the `.` in `docker build -t my-eleme
 
 While writing modules is meant to be easy, not everything is possible yet. For modules which want to do something we haven't
 exposed in the module API, the module API will need to be updated. This means a PR to both the
-[`matrix-react-sdk`](https://github.com/matrix-org/matrix-react-sdk) and [`matrix-react-sdk-module-api`](https://github.com/matrix-org/matrix-react-sdk-module-api).
+[`@dom-digital-online-media/matrix-react-sdk`](https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk) and [`@dom-digital-online-media/matrix-react-sdk-module-api`](https://github.com/matrix-org/@dom-digital-online-media/matrix-react-sdk-module-api).
 
 Once your change to the module API is accepted, the `@matrix-org/react-sdk-module-api` dependency gets updated at the
-`matrix-react-sdk` and `element-web` layers (usually by us, the maintainers) to ensure your module can operate.
+`@dom-digital-online-media/matrix-react-sdk` and `element-web` layers (usually by us, the maintainers) to ensure your module can operate.
 
 If you're not adding anything to the module API, or your change was accepted per above, then start off with a clone of
 our [ILAG module](https://github.com/vector-im/element-web-ilag-module) which will give you a general idea for what the

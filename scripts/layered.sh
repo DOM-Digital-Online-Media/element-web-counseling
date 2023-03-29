@@ -8,12 +8,12 @@ set -ex
 # in element-web.
 
 # Note that this style is different from the recommended developer setup: this
-# file nests js-sdk and matrix-react-sdk inside element-web, while the local
+# file nests js-sdk and @dom-digital-online-media/matrix-react-sdk inside element-web, while the local
 # development setup places them all at the same level. We are nesting them here
 # because some CI systems do not allow moving to a directory above the checkout
 # for the primary repo (element-web in this case).
 
-# Install dependencies, as we'll be using fetchdep.sh from matrix-react-sdk
+# Install dependencies, as we'll be using fetchdep.sh from @dom-digital-online-media/matrix-react-sdk
 yarn install --pure-lockfile
 
 # Pass appropriate repo to fetchdep.sh
@@ -21,7 +21,7 @@ export PR_ORG=vector-im
 export PR_REPO=element-web
 
 # Set up the js-sdk first
-node_modules/matrix-react-sdk/scripts/fetchdep.sh matrix-org matrix-js-sdk
+node_modules/@dom-digital-online-media/matrix-react-sdk/scripts/fetchdep.sh matrix-org matrix-js-sdk
 pushd matrix-js-sdk
 yarn link
 yarn install --pure-lockfile
@@ -29,7 +29,7 @@ popd
 
 # Also set up matrix-analytics-events so we get the latest from
 # the main branch or a branch with matching name
-node_modules/matrix-react-sdk/scripts/fetchdep.sh matrix-org matrix-analytics-events main
+node_modules/@dom-digital-online-media/matrix-react-sdk/scripts/fetchdep.sh matrix-org matrix-analytics-events main
 pushd matrix-analytics-events
 yarn link
 yarn install --pure-lockfile
@@ -37,8 +37,8 @@ yarn build:ts
 popd
 
 # Now set up the react-sdk
-node_modules/matrix-react-sdk/scripts/fetchdep.sh matrix-org matrix-react-sdk
-pushd matrix-react-sdk
+node_modules/@dom-digital-online-media/matrix-react-sdk/scripts/fetchdep.sh matrix-org @dom-digital-online-media/matrix-react-sdk
+pushd @dom-digital-online-media/matrix-react-sdk
 yarn link
 yarn link matrix-js-sdk
 yarn link @matrix-org/analytics-events
@@ -47,4 +47,4 @@ popd
 
 # Link the layers into element-web
 yarn link matrix-js-sdk
-yarn link matrix-react-sdk
+yarn link @dom-digital-online-media/matrix-react-sdk
